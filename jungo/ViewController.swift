@@ -43,18 +43,18 @@ class ViewController: UIViewController {
     
     func  hantei(sender: Int){
         if sender > 7{
-            if masuArray[sender] == masuArray[sender-8] && masuArray[sender-4] != turn_count {
-                masuArray[sender-4] = 0
-                hyouji_koma[sender-4].text = ""
+            if masuArray[sender] == masuArray[sender-8] && masuArray[sender-5] != turn_count {
+                masuArray[sender-5] = 0
+                hyouji_koma[sender-5].text = ""
                 uk_cont[turn_count-1] += 1
                 ukcountlabel[turn_count-1].text = String(uk_cont[turn_count-1])
                 
             }
         }
         if sender < 7 {
-            if masuArray[sender] == masuArray[sender+8] && masuArray[sender+4] != turn_count{
-                masuArray[sender+4] = 0
-                hyouji_koma[sender+4].text = ""
+            if masuArray[sender] == masuArray[sender+8] && masuArray[sender+5] != turn_count{
+                masuArray[sender+5] = 0
+                hyouji_koma[sender+5].text = ""
             }
         }
         
